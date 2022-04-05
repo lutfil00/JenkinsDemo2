@@ -24,7 +24,7 @@ public class BaseClass {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-		driver.manage().window().maximize();
+		driver.manage().window().fullscreen();
 		driver.get(System.getProperty("url"));
 			driver.get("https://www.google.com/");
 			driver.manage().window().maximize();
