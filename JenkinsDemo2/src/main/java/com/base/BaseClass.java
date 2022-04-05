@@ -24,10 +24,10 @@ public class BaseClass {
 			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
-		driver.manage().window().fullscreen();
+		driver.manage().window().maximize();
 		driver.get(System.getProperty("url"));
 			driver.get("https://www.google.com/");
-			driver.manage().window().fullscreen();
+			driver.manage().window().maximize();
 	}	
 	@AfterMethod
 	public void tearDown() {
