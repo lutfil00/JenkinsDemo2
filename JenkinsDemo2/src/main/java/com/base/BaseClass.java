@@ -27,7 +27,7 @@ public class BaseClass {
 		driver.manage().window().fullscreen();
 		driver.get(System.getProperty("url"));
 			driver.get("https://www.google.com/");
-			driver.manage().window().maximize();
+			driver.manage().window().fullscreen();
 	}	
 	@AfterMethod
 	public void tearDown() {
